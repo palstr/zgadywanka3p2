@@ -46,6 +46,8 @@ public class Main {
 
         // dzielenie 2 całkowitych zawsze da całkowitą. By była rzeczywista, trzeba rzutować.
 
+        // instrukcja switch
+
         switch(roznica){
             case 0:
                 System.out.println("Bardzo blisko!");
@@ -64,6 +66,16 @@ public class Main {
                 break;
         }
 
+        // wyrażenie switch
+
+        System.out.println(
+                switch(roznica){
+                    case 0 -> "Bardzo dobrze!";
+                    case 1 -> "Dobrze!";
+                    case 2 -> "Dość dobrze.";
+                    default -> "Słabo...";
+                }
+        );
 
     }
 }
