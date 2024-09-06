@@ -1,3 +1,18 @@
+/*
+git init
+git config --global (global tylko w domu)
+git config user.name "nazwa"
+git config user.email "email"
+git add .
+git commit -m (od message) "commit"
+git log (wszystkie commity)(wyjść za pomocą q)
+git status
+git remote add (add za 1. razem, by zmienić: set-url) origin [link]
+git push -u origin master (za 1. razem, za kolejnymi tylko push)(master to branch)
+
+PROGRAMUJEMY W FOLDERZE "SRC"
+ */
+
 import java.util.Scanner;
 
 public class Main {
@@ -89,5 +104,21 @@ public class Main {
         }
         // można napisać 'fori' ^
 
+        // tak długo, aż się zgadnie
+
+        System.out.println("Podaj liczbę");
+        wpisanaLiczba = klawiatura.nextInt();
+
+        while(wpisanaLiczba != wylosowanaLiczba){
+            if(wpisanaLiczba > wylosowanaLiczba){
+                System.out.println("Wpisano za dużo!");
+            }
+            else{
+                System.out.println("Wpisano za mało!");
+            }
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
+        }
+        System.out.println("Wygrana!");
     }
 }
