@@ -42,6 +42,28 @@ public class Main {
         System.out.println("Pomyłka o "+roznica);
         System.out.println("Wylosowaną liczbą było "+wylosowanaLiczba);
 
+        roznica = roznica/10;
+
+        // dzielenie 2 całkowitych zawsze da całkowitą. By była rzeczywista, trzeba rzutować.
+
+        switch(roznica){
+            case 0:
+                System.out.println("Bardzo blisko!");
+                break;
+
+            case 1:
+                System.out.println("Blisko!");
+                break;
+
+            case 2:
+                System.out.println("Dość blisko...");
+                break;
+
+            default:
+                System.out.println("Słabo...");
+                break;
+        }
+
 
     }
 }
