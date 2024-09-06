@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("Na lekcjach");
 
-        int wylosowanaLiczba = (int) (Math.random()*100+1);
+        int wylosowanaLiczba = (int) (Math.random() * 100 + 1);
         //rzutowanie na inta     ^ (wyrażane nawiasem)
         /*
         typy proste przechowują tylko wartość (pisane małą literą!!):
@@ -26,9 +26,21 @@ public class Main {
         System.out.println("Podaj liczbę");
         int wpisanaLiczba = klawiatura.nextInt();
 
+        //zamiast System.out[...] można pisać 'sout'
+
+        if (wpisanaLiczba == wylosowanaLiczba) {
+            System.out.println("Wygrana!");
+        } else {
+            System.out.println("Pudło!");
+        }
+
+        // określić jak duża różnica
+        //wyrażenie warunkowe zwraca wartość
+
+        int roznica = wpisanaLiczba > wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
+
+        System.out.println("Pomyłka o "+roznica);
+
 
     }
-
-
-
 }
