@@ -3,7 +3,8 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("Na lekcjach");
 
-        double wylosowanaLiczba = Math.random()*100+1;
+        int wylosowanaLiczba = (int) (Math.random()*100+1);
+        //rzutowanie na inta ^ (wyrażane nawiasem)
 
         System.out.println(wylosowanaLiczba);
     }
