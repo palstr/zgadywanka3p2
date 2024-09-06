@@ -55,7 +55,6 @@ public class Main {
         int roznica = wpisanaLiczba > wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
 
         System.out.println("Pomyłka o "+roznica);
-        System.out.println("Wylosowaną liczbą było "+wylosowanaLiczba);
 
         roznica = roznica/10;
 
